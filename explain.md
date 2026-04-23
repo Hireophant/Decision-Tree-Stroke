@@ -1,12 +1,12 @@
 ﻿# Giải thích chi tiết notebook brain-stroke-classification.ipynb
 
-Bạn nói đúng: file này được viết lại theo kiểu giải thích gần như từng dòng code để dễ học và dễ thuyết trình.
+Tài liệu này giải thích notebook theo từng cell và theo từng dòng code ở các cell code.
 
 ## Quy ước đọc
 
-- Mình đánh số theo thứ tự cell trong notebook (Cell 1, Cell 2, ...).
-- Chỉ các cell code mới có giải thích từng dòng.
-- Các cell markdown là phần mô tả mục tiêu và flow.
+- Đánh số theo thứ tự cell trong notebook (Cell 1, Cell 2, ...).
+- Chỉ các cell code có giải thích từng dòng.
+- Các cell markdown chỉ mô tả mục tiêu và luồng xử lý.
 
 ## Cell 3 - Import thư viện và cấu hình
 
