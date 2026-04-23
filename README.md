@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 ```bash
 py -m venv .venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 py -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
