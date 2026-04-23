@@ -1,11 +1,11 @@
 ,importance
-num__avg_glucose_level,0.3199181096295605
-num__age,0.19790570555568518
-num__bmi,0.18337114228346418
-cat__Residence_type_Urban,0.029955429977531346
+num__avg_glucose_level,0.3199181096295604
+num__age,0.1979057055556851
+num__bmi,0.18337114228346427
+cat__Residence_type_Urban,0.029955429977531353
 cat__Residence_type_Rural,0.029428633097584353
-cat__gender_Male,0.02827091126087429
-cat__work_type_Self-employed,0.027573002368729643
-cat__gender_Female,0.027346460449532213
+cat__gender_Male,0.02827091126087428
+cat__work_type_Self-employed,0.02757300236872964
+cat__gender_Female,0.027346460449532206
 cat__smoking_status_smokes,0.02491638293511469
-cat__smoking_status_never smoked,0.020132364885283048
+cat__smoking_status_never smoked,0.02013236488528304
