@@ -1,0 +1,79 @@
+|--- num__age <= 67.50
+|   |--- num__age <= 48.50
+|   |   |--- num__age <= 37.50
+|   |   |   |--- num__avg_glucose_level <= 57.93
+|   |   |   |   |--- num__avg_glucose_level <= 57.92
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- num__avg_glucose_level >  57.92
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- num__avg_glucose_level >  57.93
+|   |   |   |   |--- num__age <= 1.36
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |--- num__age >  1.36
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |--- num__age >  37.50
+|   |   |   |--- num__bmi <= 45.60
+|   |   |   |   |--- cat__smoking_status_formerly smoked <= 0.50
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |--- cat__smoking_status_formerly smoked >  0.50
+|   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |--- num__bmi >  45.60
+|   |   |   |   |--- cat__gender_Male <= 0.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- cat__gender_Male >  0.50
+|   |   |   |   |   |--- class: 1
+|   |--- num__age >  48.50
+|   |   |--- num__avg_glucose_level <= 161.58
+|   |   |   |--- cat__smoking_status_never smoked <= 0.50
+|   |   |   |   |--- num__age <= 56.50
+|   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |--- num__age >  56.50
+|   |   |   |   |   |--- truncated branch of depth 13
+|   |   |   |--- cat__smoking_status_never smoked >  0.50
+|   |   |   |   |--- num__bmi <= 37.40
+|   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |--- num__bmi >  37.40
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |--- num__avg_glucose_level >  161.58
+|   |   |   |--- num__avg_glucose_level <= 162.62
+|   |   |   |   |--- class: 1
+|   |   |   |--- num__avg_glucose_level >  162.62
+|   |   |   |   |--- num__bmi <= 48.15
+|   |   |   |   |   |--- truncated branch of depth 17
+|   |   |   |   |--- num__bmi >  48.15
+|   |   |   |   |   |--- class: 1
+|--- num__age >  67.50
+|   |--- num__avg_glucose_level <= 126.84
+|   |   |--- num__bmi <= 17.25
+|   |   |   |--- class: 1
+|   |   |--- num__bmi >  17.25
+|   |   |   |--- num__bmi <= 34.45
+|   |   |   |   |--- num__avg_glucose_level <= 110.72
+|   |   |   |   |   |--- truncated branch of depth 18
+|   |   |   |   |--- num__avg_glucose_level >  110.72
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |--- num__bmi >  34.45
+|   |   |   |   |--- cat__ever_married_Yes <= 0.50
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |--- cat__ever_married_Yes >  0.50
+|   |   |   |   |   |--- class: 0
+|   |--- num__avg_glucose_level >  126.84
+|   |   |--- num__avg_glucose_level <= 135.06
+|   |   |   |--- num__age <= 71.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__age >  71.50
+|   |   |   |   |--- cat__smoking_status_Unknown <= 0.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- cat__smoking_status_Unknown >  0.50
+|   |   |   |   |   |--- truncated branch of depth 2
+|   |   |--- num__avg_glucose_level >  135.06
+|   |   |   |--- num__bmi <= 25.75
+|   |   |   |   |--- num__hypertension <= 0.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- num__hypertension >  0.50
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |--- num__bmi >  25.75
+|   |   |   |   |--- num__avg_glucose_level <= 238.80
+|   |   |   |   |   |--- truncated branch of depth 18
+|   |   |   |   |--- num__avg_glucose_level >  238.80
+|   |   |   |   |   |--- truncated branch of depth 6

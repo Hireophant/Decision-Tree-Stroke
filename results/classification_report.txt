@@ -1,0 +1,20 @@
+=== Baseline Decision Tree ===
+              precision    recall  f1-score   support
+
+           0       0.96      0.94      0.95       947
+           1       0.14      0.18      0.16        50
+
+    accuracy                           0.90       997
+   macro avg       0.55      0.56      0.55       997
+weighted avg       0.91      0.90      0.91       997
+
+
+=== Final Selected Model ===
+              precision    recall  f1-score   support
+
+           0       0.98      0.78      0.87       947
+           1       0.14      0.66      0.23        50
+
+    accuracy                           0.78       997
+   macro avg       0.56      0.72      0.55       997
+weighted avg       0.94      0.78      0.84       997

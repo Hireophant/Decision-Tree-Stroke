@@ -1,0 +1,67 @@
+|--- num__age <= 48.50
+|   |--- num__age <= 37.50
+|   |   |--- num__avg_glucose_level <= 76.16
+|   |   |   |--- num__avg_glucose_level <= 75.81
+|   |   |   |   |--- cat__work_type_children <= 0.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- cat__work_type_children >  0.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- num__avg_glucose_level >  75.81
+|   |   |   |   |--- class: 1
+|   |   |--- num__avg_glucose_level >  76.16
+|   |   |   |--- class: 0
+|   |--- num__age >  37.50
+|   |   |--- cat__work_type_Govt_job <= 0.50
+|   |   |   |--- cat__smoking_status_formerly smoked <= 0.50
+|   |   |   |   |--- num__age <= 45.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- num__age >  45.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- cat__smoking_status_formerly smoked >  0.50
+|   |   |   |   |--- num__avg_glucose_level <= 82.26
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- num__avg_glucose_level >  82.26
+|   |   |   |   |   |--- class: 1
+|   |   |--- cat__work_type_Govt_job >  0.50
+|   |   |   |--- class: 0
+|--- num__age >  48.50
+|   |--- num__age <= 67.50
+|   |   |--- num__avg_glucose_level <= 111.80
+|   |   |   |--- num__avg_glucose_level <= 59.81
+|   |   |   |   |--- class: 0
+|   |   |   |--- num__avg_glucose_level >  59.81
+|   |   |   |   |--- num__avg_glucose_level <= 106.62
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- num__avg_glucose_level >  106.62
+|   |   |   |   |   |--- class: 0
+|   |   |--- num__avg_glucose_level >  111.80
+|   |   |   |--- num__bmi <= 27.25
+|   |   |   |   |--- cat__smoking_status_smokes <= 0.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- cat__smoking_status_smokes >  0.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- num__bmi >  27.25
+|   |   |   |   |--- num__heart_disease <= 0.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- num__heart_disease >  0.50
+|   |   |   |   |   |--- class: 1
+|   |--- num__age >  67.50
+|   |   |--- num__avg_glucose_level <= 126.84
+|   |   |   |--- num__bmi <= 36.85
+|   |   |   |   |--- num__avg_glucose_level <= 110.72
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- num__avg_glucose_level >  110.72
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- num__bmi >  36.85
+|   |   |   |   |--- class: 0
+|   |   |--- num__avg_glucose_level >  126.84
+|   |   |   |--- num__bmi <= 25.75
+|   |   |   |   |--- num__avg_glucose_level <= 197.85
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- num__avg_glucose_level >  197.85
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- num__bmi >  25.75
+|   |   |   |   |--- num__bmi <= 30.05
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- num__bmi >  30.05
+|   |   |   |   |   |--- class: 1

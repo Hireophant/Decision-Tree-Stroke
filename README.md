@@ -6,7 +6,7 @@ This project uses `DecisionTreeClassifier` to predict `stroke` outcomes from the
 
 - Build a baseline Decision Tree model for stroke prediction
 - Analyze the structure and behavior of the decision tree
-- Compare the baseline model with improved versions such as `class_weight`, `pruning`, and `entropy + pruning`
+- Compare the baseline model with improved versions such as `class_weight`, `pruning`, `entropy`, and a combined final model
 - Support lab work, coursework, or report writing with a clear and reproducible workflow
 
 ## Project Structure
@@ -122,13 +122,32 @@ Then:
 - Inspect dataset size, columns, data types, missing values, and duplicates
 - Visualize the distributions of `stroke`, `age`, `avg_glucose_level`, and `bmi`
 - Preprocess the data by:
-  - filling missing values in `bmi`
-  - applying one-hot encoding to categorical features
-  - splitting the data into training and testing sets with `stratify`
+  - splitting data first with `stratify` to avoid leakage
+  - using `ColumnTransformer` + `Pipeline`
+  - imputing numeric columns with mean
+  - imputing categorical columns with most frequent + one-hot encoding
 - Train a baseline `DecisionTreeClassifier`
-- Evaluate the model using Accuracy, Precision, Recall, F1-Score, and ROC-AUC
+- Evaluate models using Accuracy, Error Rate, Precision, Recall, F1-Score, ROC-AUC, and False Negative Rate (FNR)
 - Visualize the decision tree and inspect feature importance
 - Compare multiple improved Decision Tree configurations
+- Select a final model based on imbalanced-classification priorities (Recall/F1)
+- Run 5-fold `StratifiedKFold` cross-validation for final-model stability
+
+## Generated Outputs
+
+After running the notebook, artifacts are exported automatically:
+
+- `results/metrics_summary.csv`
+- `results/classification_report.txt`
+- `results/baseline_rules.txt`
+- `results/final_model_rules.txt`
+- `results/feature_importance.csv`
+- `img/baseline_tree_top3.png`
+- `img/improved_tree_top3.png`
+- `img/confusion_baseline.png`
+- `img/confusion_best_model.png`
+
+These files help keep code, report, and presentation evidence consistent.
 
 ## Troubleshooting
 
@@ -172,7 +191,7 @@ deactivate
 
 - If you are new to notebooks, run the cells one by one to better understand the workflow
 - If you modify the code and want to verify everything again, use `Restart & Run All`
-- For imbalanced classification tasks like stroke prediction, do not rely only on Accuracy; also pay attention to Recall and F1-Score
+- For imbalanced classification tasks like stroke prediction, do not rely only on Accuracy; prioritize Recall/F1 and also inspect FNR
 
 ## Notes
 

@@ -1,0 +1,6 @@
+Model,Selected,Train Accuracy,Accuracy,Error Rate,Precision,Recall,F1-Score,ROC-AUC,FNR,Depth,Leaves
+Final Selected Model,Yes,0.788153,0.776329,0.223671,0.138075,0.66,0.228374,0.773453,0.34,5,23
+Baseline,No,1.0,0.901705,0.098295,0.136364,0.18,0.155172,0.559905,0.82,22,299
+Improvement 1 - Class Weight,No,1.0,0.929789,0.070211,0.1875,0.12,0.146341,0.546272,0.88,30,351
+Improvement 3 - Entropy,No,1.0,0.914744,0.085256,0.093023,0.08,0.086022,0.519409,0.92,31,272
+Improvement 2 - Pruning,No,0.950803,0.946841,0.053159,0.0,0.0,0.0,0.781151,1.0,5,26
